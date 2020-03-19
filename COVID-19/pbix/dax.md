@@ -1,6 +1,6 @@
 # DAX
 
-Crie uma coluna calculada com o código abaixo
+Crie uma coluna calculada com o código abaixo:
 
 Confirmados =
 VAR DiaAnterior='time_series_19-covid-Confirmed'[Date]-1
