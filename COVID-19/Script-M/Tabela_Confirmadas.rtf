@@ -1,11 +1,4 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2511
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0  let\
+let\
     Fonte = Csv.Document(File.Contents("C:\\Users\\claudiomattos\\Documents\\GitHub\\COVID-19\\csse_covid_19_data\\csse_covid_19_time_series\\time_series_19-covid-Confirmed.csv"),[Delimiter=",", Columns=61, Encoding=65001, QuoteStyle=QuoteStyle.None]),\
     #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,\{\{"Column1", type text\}, \{"Column2", type text\}, \{"Column3", type text\}, \{"Column4", type text\}, \{"Column5", type text\}, \{"Column6", type text\}, \{"Column7", type text\}, \{"Column8", type text\}, \{"Column9", type text\}, \{"Column10", type text\}, \{"Column11", type text\}, \{"Column12", type text\}, \{"Column13", type text\}, \{"Column14", type text\}, \{"Column15", type text\}, \{"Column16", type text\}, \{"Column17", type text\}, \{"Column18", type text\}, \{"Column19", type text\}, \{"Column20", type text\}, \{"Column21", type text\}, \{"Column22", type text\}, \{"Column23", type text\}, \{"Column24", type text\}, \{"Column25", type text\}, \{"Column26", type text\}, \{"Column27", type text\}, \{"Column28", type text\}, \{"Column29", type text\}, \{"Column30", type text\}, \{"Column31", type text\}, \{"Column32", type text\}, \{"Column33", type text\}, \{"Column34", type text\}, \{"Column35", type text\}, \{"Column36", type text\}, \{"Column37", type text\}, \{"Column38", type text\}, \{"Column39", type text\}, \{"Column40", type text\}, \{"Column41", type text\}, \{"Column42", type text\}, \{"Column43", type text\}, \{"Column44", type text\}, \{"Column45", type text\}, \{"Column46", type text\}, \{"Column47", type text\}, \{"Column48", type text\}, \{"Column49", type text\}, \{"Column50", type text\}, \{"Column51", type text\}, \{"Column52", type text\}, \{"Column53", type text\}, \{"Column54", type text\}, \{"Column55", type text\}, \{"Column56", type text\}, \{"Column57", type text\}, \{"Column58", type text\}, \{"Column59", type text\}, \{"Column60", type text\}, \{"Column61", type text\}\}),\
     #"Cabe\'e7alhos Promovidos" = Table.PromoteHeaders(#"Tipo Alterado", [PromoteAllScalars=true]),\
